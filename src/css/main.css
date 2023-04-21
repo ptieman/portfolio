@@ -1,0 +1,86 @@
+/* LandingPage.css */
+/* Container for the entire landing page */
+.landing-page {
+  height: 100vh; /* Set the height to the viewport height */
+  background-color: #000; /* Set a fallback background color */
+  background-image: url("../images/background.jpeg"); /* Set the background image */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center; /* Center the image horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background image content */
+.background-image {
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* Navigation bar */
+.nav-bar {
+  margin-top: 2rem;
+}
+
+/* Navigation bar items */
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+/* Navigation bar links */
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  animation: none;
+}
+
+/* Navigation bar link hover effect */
+.nav-bar a:hover {
+  opacity: 1;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
