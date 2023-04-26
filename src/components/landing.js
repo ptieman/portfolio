@@ -18,9 +18,9 @@ const Landing = ({
   };
 
   return (
+    <div>
     <div className="landing-page">
       <h1 className="title">Presley Tieman</h1>
-      <p className="title-2">Software Engineer</p>
       <button className="play-button" onClick={handlePlayClick}>
         <span className="play-button-before"></span>
         <span className="play-button-after"></span>
@@ -53,14 +53,27 @@ const Landing = ({
         </li>
       </ul>
     </div>
+    <div className='footer'>
+    <ul class="social-media">
+                    <li class="social-media-item">
+                        <a href="https://www.linkedin.com/in/presley-potter/" class="social-media-link">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="mailto:presleytieman@outlook.com" class="social-media-link">
+                          <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="https://github.com/ptieman" class="social-media-link">
+                          <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
   );
 };
 
 export default Landing;
-
-
-  {/* <div className='text-box'>
-            <div className='text-container'>
-            <p className='text'>Software Engineer with a passion for learning and contributing to meaningful projects. Utilizing enterprise-level languages like JavaScript, React, Python, and CSS to develop web applications and deliver solutions with a customer-first approach. </p>
-            </div> */}
-          {/* </div> */}
