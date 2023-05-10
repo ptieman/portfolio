@@ -1,0 +1,55 @@
+// styling for nested classes
+
+
+
+.about-page {
+    min-height: 100vh;
+    background-color: rgba($color: #003f14, $alpha: 1.0);
+//   align-items: center;
+.about-section {
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-evenly;
+    border: 5px solid;
+    border-radius: 100px;
+    width: 100vw;
+    height: 600px;
+    
+
+    background-color: rgba($color: #aeb7b1ab, $alpha: 1.0);
+
+    .about-page-pic {
+        max-height: 500px;
+        margin-top: 50px;
+    }
+
+    .about-page-bio {
+        color: black;
+        max-width: 500px;
+        margin-top: 150px;
+    }
+
+    
+    
+}
+.about-page-skills-heading {
+    margin-top: 100px;
+    color: white;
+    margin-left: 400px;
+}
+
+.buttons-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    max-width: 500px;
+}
+}
+
+.heading {
+    margin-left: 50%;
+    margin-bottom: 50px;
+    color: white;
+}   
+
+    

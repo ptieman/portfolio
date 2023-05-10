@@ -17,14 +17,6 @@ $color-white: #fff;
     --_btn-text: var(--theme-text);
     --_btn-text-shadow: var(--theme-shadow);
     --_bounce-ease: cubic-bezier(.5, 1.75, .75, 1.25);
-  
-    /* remove <ul> margins */
-    // margin: 20;
-
-    // margin-right: 20px;
-    // justify-content: flex-end;
-  
-    /* vertical rag-right layout */
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -60,10 +52,7 @@ $color-white: #fff;
   
     font-size: min(4vmin, 2.5rem);
     font-family: 'Lobster', cursive;
-    // padding-block: .75ch;
-    // padding-inline: 2ch;
-    // border-radius: 5px 20px;
-
+  
     // font-size: min(3vmin, 2rem); /* Adjusted font size */
   padding-block: 0.5ch; /* Adjusted vertical padding */
   padding-inline: 1ch; /* Adjusted horizontal padding */
