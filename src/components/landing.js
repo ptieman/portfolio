@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import React from 'react';
 import '../scss/main.scss';
 import Sound from 'react-sound';
@@ -24,7 +24,7 @@ const Landing = ({
       <button className="play-button" onClick={handlePlayClick}>
         <span className="play-button-before"></span>
         <span className="play-button-after"></span>
-      </button>
+</button>
       <Sound
         url={SirenWar}
         playStatus={

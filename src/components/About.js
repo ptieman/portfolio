@@ -65,8 +65,27 @@ const About = () => {
 
     return (
       <div className="about-page">
-        <div class="heading"><h3>About Me</h3></div>
-
+        
+        <div className="navbar">
+        <ul className="navbarlist">
+        <li className="navbaritem">
+          <a href="/">
+            <button className="navbutton">Home</button>
+          </a>
+        </li>
+        <li className="navbaritem">
+          <a href="/projects">
+            <button className="navbutton">Projects</button>
+          </a>
+        </li>
+        <li className="navbaritem">
+          <a href="/blog">
+            <button className="navbutton">Blog</button>
+          </a>
+        </li>
+      </ul>
+      </div>
+      <div class="heading"><h3>About Me</h3></div>
         <div className="about-section">
           <div className="dice"><i class='fas fa-dice-d20 fa-spin fa-pulse fa-5x'></i></div>
         
@@ -109,6 +128,7 @@ const About = () => {
 </div>
   </div>
     </div>
+
     )
   };
   

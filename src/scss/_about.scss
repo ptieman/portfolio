@@ -38,6 +38,48 @@
     
 }
 
+.navbar {
+
+    .navbarlist {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
+    .navbaritem {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: black;
+        text-shadow: 
+            -0.0075em 0.0075em 0 mix(#fff, #6e3649, 94%),
+            0.005em 0.005em 0 mix(#fff, #6e3649, 60%),
+            0.01em 0.01em 0 mix(#fff, #6e3649, 62%), 
+            0.015em 0.015em mix(#fff, #6e3649, 64%), 
+            0.02em 0.02em 0 mix(#fff, #6e3649, 66%), 
+            0.025em 0.025em 0 mix(#fff, #6e3649, 68%),
+            0.03em 0.03em 0 mix(#fff, #6e3649, 70%),
+            0.035em 0.035em 0 mix(#fff, #6e3649, 72%);
+    }
+
+    .navbutton {
+        width: 150px;
+        height: 30px;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+        border-radius: 4px;
+        
+        &:hover {
+            border: #ccc 1px solid;
+            box-shadow: 0 0 8px #d0e7fd;
+        }
+        
+    }
+}
+
 .about-section {
     display: flex;
     justify-content: space-evenly;
@@ -46,11 +88,7 @@
     width: 70vw;
     height: 600px;
     margin-left: 14%;
-    margin-top: -5rem;
-    // margin-top: 150px;
-    
-    
-
+    margin-top: -2rem;
     background-color: rgba($color: #ffffffab, $alpha: 1.0);
 
     .about-page-pic {
@@ -77,6 +115,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin-top: 2.5rem;
   }
   
   /* Styling for the left column buttons */
