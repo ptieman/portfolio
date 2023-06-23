@@ -22,6 +22,7 @@ const About = () => {
       setSelectedItem(categoryOrItem);
     }
   };
+
   const experienceItems = [
     { name: 'Getty Images', description: 'Developed responsive and user-friendly web applications using React, Ruby on Rails, and SCSS, following industry best practices and coding standards. Implemented efficient front-end solutions, optimized for performance and scalability, resulting in enhanced website loading speeds and improved overall user engagement. Conducted comprehensive testing and debugging, utilizing testing frameworks such as Jest and Rack to ensure high code quality and robustness' },
     { name: 'Open Source - EddieHub', description: 'Added new features and functionality, adhering to best coding practices and standards, resulting in increased project usability and user engagement. Participated in community discussions, contributing ideas and insights to project roadmaps and strategies, and engaging in constructive discussions on technical topics, contributing to the overall growth and development of the project'
@@ -37,14 +38,8 @@ const About = () => {
   const coursesItems = [
     { name: 'SASS - The Complete SASS Course', description: 'Learned hands-on while building multiple projects using SASS - COMPLETED' },
     { name: 'OpenAI', description: 'Used OpenAI to build intelligent applications and solutions using Python that can understand and respond to human language, (natural language processing,) generate text, perform sentiment analysis. IN PROGRESS' },
-    // { name: 'Course 3', description: 'Some courses description for Course 3' },
-  ];
 
-  // const otherItems = [
-  //   { name: 'Item 1', description: 'Some other description for Item 1' },
-  //   { name: 'Item 2', description: 'Some other description for Item 2' },
-  //   { name: 'Item 3', description: 'Some other description for Item 3' },
-  // ];
+  ];
 
   const getSelectedCategoryItems = (category) => {
     switch (category) {
@@ -54,18 +49,13 @@ const About = () => {
         return skillsItems;
       case 'courses':
         return coursesItems;
-      // case 'other':
-      //   return otherItems;
       default:
         return [];
     }
   };
 
-  
-
     return (
       <div className="about-page">
-        
         <div className="navbar">
         <ul className="navbarlist">
         <li className="navbaritem">
@@ -78,11 +68,11 @@ const About = () => {
             <button className="navbutton">Projects</button>
           </a>
         </li>
-        <li className="navbaritem">
+        {/* <li className="navbaritem">
           <a href="/blog">
             <button className="navbutton">Blog</button>
           </a>
-        </li>
+        </li> */}
       </ul>
       </div>
       <div class="heading"><h3>About Me</h3></div>
@@ -108,9 +98,6 @@ const About = () => {
         <button onClick={() => handleCategorySelect('courses')} className={selectedCategory === 'courses' ? 'selected' : ''}>
           Courses
         </button>
-        {/* <button onClick={() => handleCategorySelect('other')} className={selectedCategory === 'other' ? 'selected' : ''}>
-          Education
-        </button>     */}
       </div>
       <div className="middle-column">
   {selectedCategoryItems.map((item) => (
@@ -122,13 +109,12 @@ const About = () => {
       {item.name}
     </button>
   ))}
-</div>
-<div className="right-column">
-{selectedItem ? <p>{selectedItem.description}</p> : null}
-</div>
+  </div>
+  <div className="right-column">
+  {selectedItem ? <p>{selectedItem.description}</p> : null}
   </div>
     </div>
-
+      </div>
     )
   };
   

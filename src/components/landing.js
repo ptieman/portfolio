@@ -10,7 +10,6 @@ const Landing = ({
   handleSongFinishedPlaying
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showTooltip, setShowTooltip] = useState(true);
 
   const handlePlayClick = () => {
     setShowTooltip(false);
@@ -46,11 +45,11 @@ const Landing = ({
             <button>Projects</button>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="/blog">
             <button>Blog</button>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
     <div className='footer'>
