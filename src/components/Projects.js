@@ -20,6 +20,21 @@ const projectsDummyData = [
   },
 ]
 
+const onButtonClick = () => {
+  // using Java Script method to get PDF file
+  fetch('PresleyPotterResume.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'PresleyPotterResume.pdf';
+          alink.click();
+      })
+  })
+}
+
 
 
 const Projects = () => {
@@ -32,6 +47,11 @@ const Projects = () => {
             <button className="navbutton">Home</button>
           </a>
         </li>
+        <li className="navbaritem">
+          <button className="navbutton" onClick={onButtonClick}>
+                    Download My Resume
+                </button>
+              </li>
         <li className="navbaritem">
           <a href="/about">
             <button className="navbutton">About</button>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Landing from './components/Landing';
+import Landing from './components/Landing.js';
 import About from './components/About';
 import Projects from './components/Projects';
-import BlogList from './components/BlogList';
+// import BlogList from './components/BlogList';
 
 
 

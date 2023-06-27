@@ -12,7 +12,7 @@ const Landing = ({
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayClick = () => {
-    setShowTooltip(false);
+    // setShowTooltip(false);
     setIsPlaying(!isPlaying);
   };
 
@@ -23,7 +23,9 @@ const Landing = ({
       <button className="play-button" onClick={handlePlayClick}>
         <span className="play-button-before"></span>
         <span className="play-button-after"></span>
-</button>
+      </button>
+      <p className="subtitle">Software Engineer with a passion for learning and contributing to meaningful projects. Utilizing enterprise-level languages like JavaScript, React, Python, and CSS to deliver solutions with a customer-first approach.</p>
+      
       <Sound
         url={SirenWar}
         playStatus={
